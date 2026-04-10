@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shift Swap Request</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Shift Swap Request</h1>
+    <p id="description">Please Complete Form:</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">
+          Enter your name:
+          <input id="name" type="text" required placeholder="Your name">
+        </label>
+        <label id="email-label">
+          Enter the name of Nurse
+          <input id="email" type="email" required placeholder="Your email">
+        </label>
+        <label id="number-label">
+          Phone Number (Optional):
+          <input id="number" type="number" min="13" max="130" placeholder="Your phone number">
+        </label>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <label>
+          Select the day of the week
+          <select id="dropdown">
+            <option>Select an option<option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+          </select>
+        </label>
+      
+          <p>Which shift</p>
+          <label class="radio-btn">
+            <input type="radio" name="pref-format" value="format"> Morning (7am-3pm)
+          </label>
+          <label class="radio-btn">
+            <input type="radio" name="pref-format" value="format"> Evening (3pm-11pm)
+          </label>
+          <label class="radio-btn">
+            <input type="radio" name="pref-format" value="format"> Night (11pm-7am)
+          </label>
+
+   
+      <hr id="line-2">
+        <textarea rows="5" cols="30" placeholder="Please explain the reason for shift swap"></textarea>
+      <input type="submit" value="Submit Survey" id="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>

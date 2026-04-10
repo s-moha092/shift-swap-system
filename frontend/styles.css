@@ -1,0 +1,95 @@
+body {
+  background-color: #d1d6cb00;
+  background-image: url('https://images.unsplash.com/photo-1584819762556-68601d7f3a86?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #fefefe;
+  font-family: Tahoma;
+}
+
+h1 {
+  color: rgba(59, 61, 57);
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 3px 3px 2px #fefefe;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgba(59, 61, 57);
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 25px;
+  border-radius: 50px;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 10px auto;
+}
+
+#survey-form {
+  background-color: rgba(59, 61, 57, 95%);
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+#name-label input,
+#email-label input,
+#number-label input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  height: 30px
+}
+
+fieldset {
+  border: none;
+  margin-top: 25px
+}
+
+hr {
+  width: 70%;
+}
+
+#line-2 {
+  margin:30px auto;
+}
+
+#dropdown {
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.radio-btn, .checkbox {
+  display: block;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+::placeholder {
+  font-family: Tahoma;
+  font-style: italic;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #719150;
+  border: none;
+  color: fefefe;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
