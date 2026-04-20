@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/s-moha092/shift-swap-system.git'
+                echo 'Using SCM checkout from Jenkins job config'
             }
         }
 
