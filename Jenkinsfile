@@ -4,8 +4,10 @@ pipeline {
     triggers {
         pollSCM('H/2 * * * *')
     }
- environment {
-        SONAR_TOKEN = credentials('sonar-token')
+
+    environment {
+        SONAR_TOKEN = credentials('squ_c5ab497cf97f477b029576a790abf0603d04ec91')
+    }
 
     stages {
 
@@ -36,6 +38,10 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 echo 'Running SonarQube analysis (mock)...'
+                // Replace this with actual scanner later:
+                // withSonarQubeEnv('SonarQube') {
+                //     sh 'sonar-scanner'
+                // }
             }
         }
 
