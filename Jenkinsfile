@@ -4,6 +4,8 @@ pipeline {
     triggers {
         pollSCM('H/2 * * * *')
     }
+ environment {
+        SONAR_TOKEN = credentials('sonar-token')
 
     stages {
 
